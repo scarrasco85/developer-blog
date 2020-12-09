@@ -38,6 +38,15 @@ a {
     text-decoration: none;
 }
 
+*:focus {
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
 .wrap {
     width: 53.125em;
     margin: 0em auto;
@@ -234,3 +243,189 @@ a {
     font-size: 11px;
     margin-top: 20px;
 } */
+
+
+/* ========================================== SIDEBAR =======================================================*/
+
+#sidebar {
+    float: right;
+    width: 200px;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+    margin: 65px 16px;
+}
+
+#sidebar h3 {
+    display: block;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    font-family: "BebasNeue";
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#sidebar h3:first-child {
+    margin-top: 0px;
+}
+
+
+/* Metemos el input "text" y el button con la lupa dentro de la caja #search que tendrá apariencia de input
+text */
+
+
+/*   Buscar */
+
+#search {
+    width: 84%;
+    height: 21px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+
+#sidebar input[type="text"] {
+    width: 75%;
+    height: 21px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc;
+    transition: all 300ms;
+}
+
+#sidebar input[type="text"]:focus {
+    color: #555;
+}
+
+#sidebar input[type="button"] {
+    height: 21px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #555;
+    padding-left: 7px;
+}
+
+
+/* Fin buscar */
+
+
+/* cajas */
+
+.aside-box {
+    width: 90%;
+    height: 200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    background: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+
+/* input caja Login*/
+
+#login input[type="email"],
+#login input[type="password"] {
+    display: block;
+    width: 81%;
+    height: 21px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-left: 21px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc inset;
+    border-radius: 5px;
+    color: gray;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    color: #555;
+    box-shadow: 1px 1px 1px grey inset;
+}
+
+
+/* Esta vez posicionamos los simbolos del candado y del usuario dentro del input en vez de crear un div que
+tenga la misma apariencia que el input como hicimos antes. Jugamos con el padding, el ancho de los input email
+y password y la posición absoluta de los simbolos */
+
+#login #user,
+#login #lock {
+    display: block;
+    text-align: center;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+    height: 21px;
+    font-size: 14px;
+}
+
+#login #lock {
+    margin-left: 12px;
+    margin-top: 24px;
+    font-size: 17px;
+}
+
+
+/* Botones Enviar y Reset del Login */
+
+#login input[type="submit"],
+#login input[type="reset"] {
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+    color: white;
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    border: 1px solid #156785;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "TrebuchetMS";
+    font-weight: lighter;
+    transition: all 300ms;
+}
+
+#login input[type="submit"]:hover,
+#login input[type="reset"]:hover {
+    box-shadow: 0px 0px 3px gray;
+}
+
+#login a {
+    display: block;
+    font-size: 12px;
+    margin-left: 12px;
+    color: #555;
+}
+
+#login a:hover {
+    text-decoration: underline;
+    color: #2f78bc;
+}
+
+
+/* Redes sociales*/
+
+#social a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
