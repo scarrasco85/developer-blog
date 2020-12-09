@@ -591,3 +591,85 @@ y password y la posición absoluta de los simbolos */
     font-size: 12px;
     padding: 10px;
 } */
+
+
+/* ========================================== FOOTER =======================================================*/
+
+#footer {
+    width: 100%;
+    height: 320px;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .footerBox {
+    float: left;
+    width: 25%;
+    height: 200px;
+    margin: 28px;
+    text-align: center;
+    color: white;
+    font-family: 'TrebuchetMS';
+}
+
+#footer a {
+    color: #37bcf9;
+    transition: all 300ms;
+}
+
+#footer h5 {
+    display: block;
+    background: url('../img/pxgray.png'), white;
+    height: 37px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'BebasNeue';
+    font-size: 25px;
+    color: black;
+    line-height: 41px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+#footerMenu ul {
+    text-align: left;
+    margin: 15px;
+    font-size: 17px;
+}
+
+#footerMenu ul li {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footerMenu ul li a {
+    display: block;
+    height: 30px;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 203px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#imgHTML {
+    width: 146px;
+}
+
+#footer img {
+    margin-bottom: 15px;
+}
+
+#footer #browsers img {
+    width: 29px;
+}
+
+#copyright {
+    font-size: 15px;
+}
