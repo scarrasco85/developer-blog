@@ -57,6 +57,11 @@ input:focus {
     font-family: "WebSymbolsRegular";
 }
 
+.clearfix {
+    clear: both;
+    float: none;
+}
+
 
 /* ========================================== HEADER =======================================================*/
 
@@ -174,6 +179,7 @@ input:focus {
 
 .card:last-child {
     margin-right: 0px;
+    margin-bottom: 125px;
 }
 
 .card .icon {
@@ -252,7 +258,7 @@ input:focus {
     width: 200px;
     min-height: 1200px;
     font-family: "TrebuchetMS";
-    margin: 65px 16px;
+    margin: 0px 16px;
 }
 
 #sidebar h3 {
@@ -429,3 +435,159 @@ y password y la posición absoluta de los simbolos */
     margin-top: 9px;
     margin-left: 10px;
 }
+
+
+/* ====================================== ARTICLES SECCION ===================================================*/
+
+#articles {
+    width: 548px;
+    float: left;
+}
+
+#articles h2 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 56px;
+    font-family: "BebasNeue";
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+#articles article {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    padding: 10px;
+    font-family: "TrebuchetMS";
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+#articles article h4 {
+    display: block;
+    font-size: 16px;
+    margin: 3px;
+}
+
+#articles article h4 a {
+    color: #00538c;
+}
+
+#articles article h4 a:hover {
+    text-decoration: underline;
+}
+
+#articles .data {
+    float: right;
+    background: #393d3f;
+    color: white;
+    height: 18px;
+    line-height: 18px;
+    margin: -10px;
+    padding: 4px;
+    font-size: 10px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#articles .data span {
+    margin: 5px;
+}
+
+#articles article p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#blog {
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#blog a {
+    display: block;
+    font-family: 'BebasNeue';
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #00538c;
+}
+
+
+/* Cómo lo he hecho yo antesd e ver el video. Ha quedado bien
+#articles {
+    width: 548px;
+    float: left;
+}
+
+#articles h2 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 56px;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    font-family: "BebasNeue";
+}
+
+#articles article,
+#articles #blog {
+    width: 535px;
+    border: 1px solid #ccc;
+    background: white;
+    margin: 40px auto;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+#articles #blog {
+    height: 102px;
+    text-align: center;
+    font-size: 52px;
+    font-family: 'BebasNeue';
+    line-height: 107px;
+}
+
+#articles #blog a {
+    color: #00538c;
+}
+
+#articles article .data {
+    display: block;
+    float: right;
+    background: #393d3f;
+    color: white;
+    font-family: "TrebuchetMS";
+    border-radius: 0px 0px 0px 5px;
+    font-size: 10px;
+    padding: 7px;
+}
+
+#articles article h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#articles article h4 a {
+    font-family: 'TrebuchetMS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #00538c;
+    padding-top: 10px;
+}
+
+#articles article p {
+    font-family: 'TrebuchetMS';
+    font-size: 12px;
+    padding: 10px;
+} */
