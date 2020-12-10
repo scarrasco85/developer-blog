@@ -87,12 +87,53 @@ input:focus {
     transition: all 300ms;
 }
 
+#logo:hover {
+    border-radius: 2px;
+    color: black;
+    background-color: #ccc;
+}
+
 #logo .gear {
     display: block;
     float: left;
     font-size: 20px;
     margin-top: 6px;
     margin-left: 14px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* Siempre tendrá la misma velocidad */
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* Cuando haga hover en el logo sucederá la siguiente animación */
+
+#logo:hover .gear {
+    /* animation-name = fromBellow, animation-duration=500ms, animation-timing-function= linear */
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow {
+    /* Lo hacemos desaparecer y aparecer de nuevo */
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 #logo h3 {
@@ -102,6 +143,34 @@ input:focus {
     margin-right: 47px;
     font-size: 26px;
     transition: all 300ms;
+}
+
+
+/* Cuando se haga hover en el logo se aplica la animación 'fromRight' al h3 del logo*/
+
+#logo:hover h3 {
+    animation: fromRight 3s linear;
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(270%);
+    }
+    75% {
+        transform: translateY(350%);
+    }
+    76% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 #menu {
@@ -149,6 +218,17 @@ input:focus {
     background: url("../img/bakbaner.png");
     background-position: -636px -227px;
     margin: 15px auto;
+    overflow: hidden;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -636px -227px;
+    }
 }
 
 #banner h1 {
@@ -162,6 +242,38 @@ input:focus {
     text-shadow: 2px 2px 1px black;
     text-align: center;
     margin: 20px auto;
+    animation: showText 10s linear;
+}
+
+
+/* Se realiza 1vez cada vez que se recargue la página */
+
+@keyframes showText {
+    0% {
+        /* transform: translateX(-600%);
+        scale: (5, 5); */
+        /* Se oculta el texto y se multiplica el tamaño por 5, además opacidad será 1, será visible*/
+        transform: translateX(-500%) scale(4, 4);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(500%) scale(4, 4);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-500%) scale(4, 4);
+        text-shadow: none;
+        /* Se va desvaneciendo el texto poco a poco*/
+        color: transparent;
+        opacity: 0;
+    }
+    100% {
+        /* Vuelve a su estado normal que hemos definido en #banner h1{} */
+        transform: translateX(0%) scale(1, 1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
 }
 
 .card {
@@ -175,6 +287,11 @@ input:focus {
     margin: 14px;
     margin-top: 40px;
     cursor: pointer;
+    transition: all 300ms;
+}
+
+.card:hover {
+    background: black;
 }
 
 .card:last-child {
@@ -190,6 +307,25 @@ input:focus {
     line-height: 81px;
     text-align: center;
     margin: 0px auto;
+    transition: all 300ms;
+}
+
+
+/* Animación de icon cuando hagamos hover sobre la tarjeta */
+
+.card:hover .icon {
+    font-size: 50px;
+    color: #37bcf9;
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }
 
 .card .category {
@@ -200,6 +336,26 @@ input:focus {
     font-weight: bold;
     text-align: center;
     color: #00538c;
+    transition: all 300ms;
+}
+
+
+/*Cuando se haga hover en la tarjeta se aplica la animación al texto de la categoría*/
+
+.card:hover .category {
+    color: white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+    from {
+        transform: translateY(-300%);
+        color: black;
+    }
+    to {
+        transform: translateY(0%);
+        color: white;
+    }
 }
 
 .card .description {
@@ -207,6 +363,26 @@ input:focus {
     text-align: center;
     font-size: 11px;
     color: #0370b9;
+    transition: all 300ms;
+}
+
+
+/*Cuando se haga hover en la tarjeta se aplica la animación al texto description */
+
+.card:hover .description {
+    color: white;
+    animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+    from {
+        transform: translateX(-300%);
+        color: black;
+    }
+    to {
+        transform: translateX(0%);
+        color: white;
+    }
 }
 
 
@@ -256,7 +432,7 @@ input:focus {
 #sidebar {
     float: right;
     width: 200px;
-    min-height: 1200px;
+    min-height: 1070px;
     font-family: "TrebuchetMS";
     margin: 0px 16px;
 }
@@ -437,6 +613,37 @@ y password y la posición absoluta de los simbolos */
 }
 
 
+/*overlay: capa oulta */
+
+#social .overlay {
+    display: block;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 56px;
+    margin-top: -32px;
+    cursor: pointer;
+    /* Como va a estar oculto le aplicamos el transform aquí y así hará efecto que aparece desde la izq */
+    transform: translateX(-65%);
+    /* opacidad cero para que no se vea */
+    opacity: 0;
+    /* Tardará 400ms en ir a la posicion translateX(0%) y en volver cuando quitemos el ratón */
+    transition: all 400ms;
+}
+
+#social div:hover .overlay {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
 /* ====================================== ARTICLES SECCION ===================================================*/
 
 #articles {
@@ -513,6 +720,7 @@ y password y la posición absoluta de los simbolos */
     margin-top: 60px;
     line-height: 100px;
     text-align: center;
+    transition: all 1s;
 }
 
 #blog a {
@@ -521,6 +729,38 @@ y password y la posición absoluta de los simbolos */
     font-size: 40px;
     letter-spacing: 3px;
     color: #00538c;
+    transition: all 1s;
+}
+
+#blog:hover {
+    background: #333;
+    border: 7px solid #37bcf9;
+    border-radius: 100px;
+    box-shadow: 0px 0px 7px gray;
+    animation: blink 10s infinite linear;
+}
+
+#blog:hover a {
+    color: white;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+}
+
+@keyframes blink {
+    0% {
+        border: 7px solid #37bcf9;
+    }
+    25% {
+        border: 7px solid green;
+    }
+    50% {
+        border: 7px solid yellow;
+    }
+    75% {
+        border: 7px solid white;
+    }
+    100% {
+        border: 7px solid #37bcf9;
+    }
 }
 
 
@@ -647,6 +887,13 @@ y password y la posición absoluta de los simbolos */
 #footerMenu ul li a {
     display: block;
     height: 30px;
+    transition: all 300ms;
+}
+
+#footerMenu ul li:hover a {
+    padding-left: 40px;
+    color: white;
+    width: 100%;
 }
 
 #footer iframe {
