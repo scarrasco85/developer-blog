@@ -296,7 +296,7 @@ input:focus {
 
 .card:last-child {
     margin-right: 0px;
-    margin-bottom: 125px;
+    margin-bottom: 50px;
 }
 
 .card .icon {
@@ -431,7 +431,7 @@ input:focus {
 
 #sidebar {
     float: right;
-    width: 200px;
+    width: 23.7%;
     min-height: 1070px;
     font-family: "TrebuchetMS";
     margin: 0px 16px;
@@ -567,10 +567,10 @@ y password y la posición absoluta de los simbolos */
 #login input[type="submit"],
 #login input[type="reset"] {
     text-align: center;
-    width: 70px;
+    width: 38%;
     height: 25px;
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 7%;
     margin-bottom: 20px;
     color: white;
     background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
@@ -647,7 +647,8 @@ y password y la posición absoluta de los simbolos */
 /* ====================================== ARTICLES SECCION ===================================================*/
 
 #articles {
-    width: 548px;
+    /* width: 548px; */
+    width: 65%;
     float: left;
 }
 
@@ -668,7 +669,7 @@ y password y la posición absoluta de los simbolos */
 }
 
 #articles article {
-    width: 100%;
+    width: 96.5%;
     height: auto;
     border: 1px solid #ccc;
     margin: 40px auto;
@@ -845,12 +846,21 @@ y password y la posición absoluta de los simbolos */
 
 #footer .footerBox {
     float: left;
-    width: 25%;
+    width: 28%;
     height: 200px;
-    margin: 28px;
+    margin-top: 28px;
+    margin: 4%;
     text-align: center;
     color: white;
     font-family: 'TrebuchetMS';
+}
+
+#footer .footerBox:first-child {
+    margin-left: 0px;
+}
+
+#footer .footerBox:last-child {
+    margin-right: 0px;
 }
 
 #footer a {

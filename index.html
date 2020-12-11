@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
     <link rel="shortcut icon" href="img/supertux.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -88,6 +90,7 @@
         <!-- ==================================== Info Section End ============================================-->
 
         <!-- ==================================== Sidebar Start ============================================-->
+        <div class="clearfix"></div>
         <aside id="sidebar">
 
             <h3>BUSCAR</h3>
@@ -117,7 +120,7 @@
                 <a href="#">¿Has olvidado la contraseña?</a>
             </div>
 
-            <h3>REDES SOCIALES</h3>
+            <h3 id="socialH3">REDES SOCIALES</h3>
             <div id="social" class="aside-box">
                 <div class="twitter">
                     <a href="#" class="icon">t</a>
@@ -145,13 +148,14 @@
                 </div>
             </div>
 
-            <h3>COLABORADORES</h3>
+            <h3 id="sponsorsH3">COLABORADORES</h3>
             <div id="sponsors" class="aside-box"></div>
 
         </aside>
         <!-- ===================================== Sidebar End ==============================================-->
 
         <!-- ==================================== Articles Start ============================================-->
+
         <section id="articles">
 
             <h2>ÚLTIMOS ARTÍCULOS</h2>
