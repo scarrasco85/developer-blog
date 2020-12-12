@@ -603,6 +603,10 @@ y password y la posición absoluta de los simbolos */
 
 /* Redes sociales*/
 
+#social-sponsors {
+    margin-top: 30px;
+}
+
 #social a {
     display: block;
     color: #333;
@@ -642,6 +646,114 @@ y password y la posición absoluta de los simbolos */
     transform: translateX(0%);
     opacity: 1;
 }
+
+#sponsors {
+    background: #00538c;
+    color: white;
+    border: 5px white;
+    text-shadow: 2px 2px 1px black;
+    box-shadow: 0px 0px 5px white inset;
+    font-size: 5vw;
+    line-height: 8vw;
+    text-align: center;
+    font-family: "BebasNeue";
+    height: auto;
+}
+
+
+/* Cajas Redes Sociales y Colaboradores en responsive - Estará visible solo en las vistas responsive
+ a partir de 600px */
+
+#social-sponsor-responsive {
+    margin: 0px auto;
+    width: 100%;
+    display: none;
+}
+
+#social-responsive,
+#sponsor-responsive {
+    float: left;
+    width: 40%;
+    margin-left: 7%;
+}
+
+#social-responsive h3,
+#sponsor-responsive h3 {
+    display: block;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    font-family: "BebasNeue";
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.sponsor-box-responsive {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 2px;
+    background: #00538c;
+    border: 5px white;
+    box-shadow: 0px 0px 5px white inset;
+    height: 200px;
+}
+
+.sponsor-box-responsive p {
+    color: white;
+    font-size: 8vw;
+    line-height: 10vh;
+    text-shadow: 2px 2px 1px black;
+    text-align: center;
+    font-family: "BebasNeue";
+}
+
+.aside-box-responsive {
+    width: 90%;
+    height: 200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 2px;
+    background: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#social-responsive a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+#social-responsive .overlay {
+    display: block;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 56px;
+    margin-top: -32px;
+    cursor: pointer;
+}
+
+
+/* Fin cajas RRSS y Colaboradores*/
 
 
 /* ====================================== ARTICLES SECCION ===================================================*/
