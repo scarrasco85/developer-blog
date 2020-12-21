@@ -15,23 +15,27 @@ It is a responsive web layout with animations built from a jpg image. HTML5 and 
 
  [Click here!](https://scarrasco85.github.io/developer-blog)
 
+---
  ## Responsive Views 
-#### Desktop view
+#### Desktop view:
 
 ![](img/screenshots/version-escritorio.png)
 ---
+***
 
-#### Medium view
+#### Medium view:
 
 ![](img/screenshots/medium-devices.png)
 ---
+***
 
-#### Small view
+#### Small view:
 
 ![](img/screenshots/small-devices.png)
 ---
+***
 
-#### Extra Small view
+#### Extra Small view:
 
-![](img/screenshots/extra-small-devices.png)
+![](img/screenshots/extra-small-device.png)
 ---
