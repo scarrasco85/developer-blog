@@ -1,4 +1,4 @@
-# Developer Blog
+# Developer Blog Layout
 ---
 ## What is Developer Blog? 🤔
 
